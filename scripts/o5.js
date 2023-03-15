@@ -16,7 +16,7 @@ function guessName() {
         throw new Error("Geen antwoord ingevuld");
     }
     if (guess === "david") {
-        throw new Error("Nee zeker niet David...");
+        throw new Error("David is ook cool maar ik bedoel een andere...");
     }
     if (guess !== actual) {
         throw new Error("Fout... probeer opnieuw");

@@ -1,4 +1,11 @@
 var error = document.getElementById("error");
+var inputs = document.querySelectorAll('input');
+inputs.forEach(function (input) {
+    input.setAttribute('autocomplete', 'off');
+    input.setAttribute('autocorrect', 'off');
+    input.setAttribute('autocapitalize', 'off');
+    input.setAttribute('spellcheck', "false");
+});
 window.addEventListener("pageshow", function (event) {
     var historyTraversal = event.persisted ||
         (typeof window.performance != "undefined" &&
